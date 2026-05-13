@@ -14,7 +14,7 @@
   }
   /* ── Header ── */
   .header {
-    background: linear-gradient(135deg, #CC0000 0%, #E53935 60%, #FF6B6B 100%);
+    background: linear-gradient(135deg, #006B3E 0%, #00A86B 60%, #4CD6A0 100%);
     color: #fff;
     padding: 40px 32px 32px;
   }
@@ -60,7 +60,7 @@
   }
   .section-number {
     width: 32px; height: 32px;
-    background: #CC0000;
+    background: #00A86B;
     color: #fff;
     border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
@@ -74,14 +74,14 @@
   .sub-section { margin-bottom: 32px; }
   .sub-section:last-child { margin-bottom: 0; }
   .sub-title {
-    font-size: 15px; font-weight: 700; color: #CC0000;
+    font-size: 15px; font-weight: 700; color: #00A86B;
     margin-bottom: 16px;
     display: flex; align-items: center; gap: 6px;
   }
   .sub-title::before {
     content: '';
     width: 3px; height: 16px;
-    background: #CC0000;
+    background: #00A86B;
     border-radius: 2px;
     display: inline-block;
   }
@@ -93,21 +93,21 @@
     gap: 16px;
   }
   .kpi-card {
-    background: #fff5f5;
-    border: 1px solid #ffc0c0;
+    background: #f0fff8;
+    border: 1px solid #80d9bb;
     border-radius: 12px;
     padding: 18px 16px;
     text-align: center;
   }
   .kpi-card .kpi-label { font-size: 12px; color: #999; margin-bottom: 8px; }
-  .kpi-card .kpi-value { font-size: 28px; font-weight: 800; color: #CC0000; line-height: 1; }
+  .kpi-card .kpi-value { font-size: 28px; font-weight: 800; color: #00A86B; line-height: 1; }
   .kpi-card .kpi-sub { font-size: 12px; color: #666; margin-top: 6px; }
 
   /* ── Bar Charts (CSS) ── */
   .bar-chart { display: flex; flex-direction: column; gap: 10px; }
   .bar-row { display: flex; align-items: center; gap: 12px; }
   .bar-label { font-size: 13px; color: #444; width: 140px; flex-shrink: 0; }
-  .bar-label.brand-highlight { font-weight: 700; color: #CC0000; }
+  .bar-label.brand-highlight { font-weight: 700; color: #00A86B; }
   .bar-track {
     flex: 1; height: 24px; background: #f0f0f0; border-radius: 12px; overflow: hidden;
     position: relative;
@@ -117,8 +117,8 @@
     transition: width 0.5s ease;
     display: flex; align-items: center; padding-left: 10px;
   }
-  .bar-fill.highlight { background: linear-gradient(90deg, #CC0000, #E53935); }
-  .bar-fill.high { background: #FFABAB; }
+  .bar-fill.highlight { background: linear-gradient(90deg, #006B3E, #00A86B); }
+  .bar-fill.high { background: #7FDBB5; }
   .bar-fill.mid { background: #e0e0e0; }
   .bar-fill.low { background: #efefef; }
   .bar-tag { font-size: 11px; font-weight: 600; color: #fff; padding: 0 8px; }
@@ -127,11 +127,11 @@
     font-size: 11px; font-weight: 700; padding: 2px 8px;
     border-radius: 10px; flex-shrink: 0;
   }
-  .level-极高 { background: #CC0000; color: #fff; }
-  .level-高 { background: #E57373; color: #fff; }
-  .level-中 { background: #FFCDD2; color: #8c0000; }
+  .level-极高 { background: #006B3E; color: #fff; }
+  .level-高 { background: #00A86B; color: #fff; }
+  .level-中 { background: #B2EEDD; color: #004d2e; }
   .level-低 { background: #f5f5f5; color: #999; }
-  .level-最高 { background: #FF6B00; color: #fff; }
+  .level-最高 { background: #006B3E; color: #fff; }
 
   /* ── Intent Cards (red palette) ── */
   .intent-grid {
@@ -144,9 +144,9 @@
     display: flex; flex-direction: column; align-items: flex-start; gap: 8px;
     border: 1px solid transparent;
   }
-  .intent-card.heat-最高 { background: #CC0000; color: #fff; border-color: #aa0000; }
-  .intent-card.heat-高 { background: #E57373; color: #fff; border-color: #c04040; }
-  .intent-card.heat-中 { background: #FFCDD2; color: #7a0000; border-color: #ffaaaa; }
+  .intent-card.heat-最高 { background: #006B3E; color: #fff; border-color: #004d2e; }
+  .intent-card.heat-高 { background: #00A86B; color: #fff; border-color: #008855; }
+  .intent-card.heat-中 { background: #B2EEDD; color: #004d2e; border-color: #80d9bb; }
   .intent-card .intent-icon { font-size: 28px; }
   .intent-card .intent-name { font-size: 15px; font-weight: 700; }
   .intent-card .intent-desc { font-size: 12px; opacity: 0.8; }
@@ -187,12 +187,13 @@
   .persona-card {
     background: #fff;
     border: 1px solid #eee;
+    border-left: 4px solid #00A86B;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
   .persona-header {
-    background: linear-gradient(135deg, #CC0000, #E57373);
+    background: linear-gradient(135deg, #006B3E, #00A86B);
     color: #fff;
     padding: 14px 18px;
   }
@@ -204,15 +205,15 @@
   .p-val { font-size: 13px; color: #333; font-weight: 500; }
   /* gender bar */
   .gender-bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-top: 4px; }
-  .gender-f { background: #CC0000; }
-  .gender-m { background: #FFCDD2; }
+  .gender-f { background: #00A86B; }
+  .gender-m { background: #B2EEDD; }
   /* rating dots */
   .dots { font-size: 16px; letter-spacing: 2px; }
   /* tags */
   .tag-group { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 2px; }
   .tag {
-    background: #fff5f5; border: 1px solid #ffc0c0;
-    color: #8c0000; border-radius: 12px; padding: 2px 9px; font-weight: 500;
+    background: #f0fff8; border: 1px solid #80d9bb;
+    color: #004d2e; border-radius: 12px; padding: 2px 9px; font-weight: 500;
   }
   .tag.sm { font-size: 11px; }
   .tag.md { font-size: 13px; }
@@ -231,9 +232,9 @@
   .season-label { width: 130px; flex-shrink: 0; font-size: 13px; color: #444; }
   .season-track { flex: 1; height: 28px; background: #f5f5f5; border-radius: 14px; overflow: hidden; }
   .season-fill { height: 100%; border-radius: 14px; display: flex; align-items: center; padding: 0 12px; font-size: 12px; font-weight: 600; color: #fff; }
-  .season-fill.s-极高 { width: 100%; background: linear-gradient(90deg,#CC0000,#E53935); }
-  .season-fill.s-高 { width: 75%; background: #E57373; }
-  .season-fill.s-中 { width: 50%; background: #FFABAB; color: #7a0000; }
+  .season-fill.s-极高 { width: 100%; background: linear-gradient(90deg,#006B3E,#00A86B); }
+  .season-fill.s-高 { width: 75%; background: #00A86B; }
+  .season-fill.s-中 { width: 50%; background: #7FDBB5; color: #004d2e; }
   .season-fill.s-低 { width: 25%; background: #e8e8e8; color: #999; }
 
   /* ── Marketing timeline ── */
@@ -241,22 +242,22 @@
   .tl-item { display: flex; align-items: flex-start; gap: 14px; }
   .tl-dot {
     width: 12px; height: 12px; border-radius: 50%;
-    background: #CC0000; flex-shrink: 0; margin-top: 5px;
+    background: #00A86B; flex-shrink: 0; margin-top: 5px;
   }
   .tl-content {}
-  .tl-period { font-size: 13px; font-weight: 700; color: #CC0000; }
+  .tl-period { font-size: 13px; font-weight: 700; color: #00A86B; }
   .tl-action { font-size: 13px; color: #555; }
 
   /* ── Insight box ── */
   .insight-box {
-    background: linear-gradient(135deg, #fff5f5, #fff);
-    border: 1px solid #FFCDD2;
-    border-left: 4px solid #CC0000;
+    background: linear-gradient(135deg, #f0fff8, #fff);
+    border: 1px solid #B2EEDD;
+    border-left: 4px solid #00A86B;
     border-radius: 10px;
     padding: 16px 20px;
     font-size: 14px; color: #333; line-height: 1.7;
   }
-  .insight-box strong { color: #CC0000; }
+  .insight-box strong { color: #006B3E; }
 
   /* ── Footer ── */
   .footer {
@@ -333,6 +334,12 @@
     </div>
 
     <div class="sub-section">
+      <div class="insight-box" style="margin-bottom:0;">
+        跨境租车搜索热度呈显著季节性，暑期（7-8月）为绝对旺季，国庆前后为第二波峰值。<strong>AVIS</strong>作为老牌全球租车品牌，在用户高意向阶段的内容布局尤为关键。
+      </div>
+    </div>
+
+    <div class="sub-section">
       <div class="sub-title">1.2 用户搜索意图分析</div>
       <div class="intent-grid">
         <div class="intent-card heat-最高">
@@ -385,6 +392,7 @@
             </div>
           </div>
         </div>
+        <div style="font-size:12px;color:#888;margin:-4px 0 6px 152px;">内容种草领先，攻略词优势明显</div>
         <div class="bar-row">
           <div class="bar-label">Hertz / 赫兹</div>
           <div class="bar-track">
@@ -393,14 +401,16 @@
             </div>
           </div>
         </div>
+        <div style="font-size:12px;color:#888;margin:-4px 0 6px 152px;">老品牌认知强，信任度高</div>
         <div class="bar-row">
-          <div class="bar-label brand-highlight">🔴 AVIS</div>
+          <div class="bar-label brand-highlight">🟢 AVIS</div>
           <div class="bar-track">
             <div class="bar-fill highlight" style="width:62%">
               <span class="bar-tag">第3 · 高</span>
             </div>
           </div>
         </div>
+        <div style="font-size:12px;color:#006B3E;font-weight:600;margin:-4px 0 6px 152px;">全球布局广，机场场景覆盖最全 ✦</div>
         <div class="bar-row">
           <div class="bar-label">Enterprise</div>
           <div class="bar-track">
@@ -409,6 +419,7 @@
             </div>
           </div>
         </div>
+        <div style="font-size:12px;color:#888;margin:-4px 0 6px 152px;">本地化强，美国市场优势</div>
         <div class="bar-row">
           <div class="bar-label">Europcar</div>
           <div class="bar-track">
@@ -417,6 +428,7 @@
             </div>
           </div>
         </div>
+        <div style="font-size:12px;color:#888;margin:-4px 0 6px 152px;">欧洲本土品牌，口碑词多</div>
         <div class="bar-row">
           <div class="bar-label">Budget</div>
           <div class="bar-track">
@@ -425,6 +437,14 @@
             </div>
           </div>
         </div>
+        <div style="font-size:12px;color:#888;margin:-4px 0 6px 152px;">价格敏感用户首选</div>
+      </div>
+    </div>
+
+    <!-- Brand positioning description -->
+    <div class="sub-section">
+      <div class="insight-box">
+        <strong>AVIS</strong>在跨境租车精准词中位列第三，品牌认知度在欧美市场较强，但在小红书平台的内容渗透仍有<strong>较大提升空间</strong>。
       </div>
     </div>
 
@@ -504,8 +524,8 @@
             <span class="chip chip-up-高">美国租车</span>
             <span class="chip chip-up-中">泰国租车</span>
             <span class="chip chip-up-中">日本租车攻略</span>
-            <span class="chip chip-up-中">海南租车攻略</span>
             <span class="chip chip-up-中">新西兰租车攻略</span>
+            <span class="chip chip-up-中">欧洲租车攻略</span>
           </div>
         </div>
         <!-- 下游词 -->
@@ -559,7 +579,7 @@
           </div>
           <div class="p-row">
             <div class="p-key">消费力</div>
-            <div class="p-val"><span class="dots" style="color:#CC0000;">●●●</span><span class="dots" style="color:#ddd;">○○</span> 中高消费</div>
+            <div class="p-val"><span class="dots" style="color:#00A86B;">●●●</span><span class="dots" style="color:#ddd;">○○</span> 中高消费</div>
           </div>
           <div class="p-row">
             <div class="p-key">城市</div>
@@ -614,7 +634,7 @@
           </div>
           <div class="p-row">
             <div class="p-key">消费力</div>
-            <div class="p-val"><span class="dots" style="color:#CC0000;">●●●●</span><span class="dots" style="color:#ddd;">○</span> 高消费</div>
+            <div class="p-val"><span class="dots" style="color:#00A86B;">●●●●</span><span class="dots" style="color:#ddd;">○</span> 高消费</div>
           </div>
           <div class="p-row">
             <div class="p-key">城市</div>
@@ -669,7 +689,7 @@
           </div>
           <div class="p-row">
             <div class="p-key">消费力</div>
-            <div class="p-val"><span class="dots" style="color:#CC0000;">●●●●</span><span class="dots" style="color:#ddd;">○</span> 高消费</div>
+            <div class="p-val"><span class="dots" style="color:#00A86B;">●●●●</span><span class="dots" style="color:#ddd;">○</span> 高消费</div>
           </div>
           <div class="p-row">
             <div class="p-key">城市</div>
@@ -710,6 +730,13 @@
       <div class="sub-title">核心洞察</div>
       <div class="insight-box">
         <strong>商旅人群是AVIS核心</strong>：一线城市精英、Ralph Lauren调性、高频机场/国际出行场景，与AVIS商务租车形象高度契合。「靠谱吗」的高热度说明<strong>信任是首要障碍</strong>，建议优先布局真实用户口碑内容与商旅场景种草，建立可信赖的品牌形象。
+      </div>
+    </div>
+
+    <!-- 综合人群洞察 -->
+    <div style="margin-top:16px;">
+      <div class="insight-box" style="background: linear-gradient(135deg, #e8fff5, #fff); border-color: #7FDBB5;">
+        商旅出行人群是AVIS的<strong>核心目标用户</strong>：一线城市精英女性为主，Ralph Lauren品牌偏好印证高端调性；携程TGI464意味着深度OTA依赖，小红书内容需从「机场体验」「无忧取车」「VIP服务」切入，建立品牌信任感。
       </div>
     </div>
   </div>
@@ -756,6 +783,47 @@
         <div class="tl-content">
           <div class="tl-period">🧧 春节前（1月）</div>
           <div class="tl-action">目的地种草，激活出境游搜索流量，与携程等OTA联动种草</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════ SECTION 5: 营销机会 ════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">5</div>
+    <div class="section-title">营销机会与行动建议</div>
+  </div>
+  <div class="section-body">
+    <div class="sub-title">AVIS 专属行动建议</div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-period">🛫 机场场景内容</div>
+          <div class="tl-action">围绕「机场取车全流程」「国际驾照准备」布局攻略内容，覆盖暑期前蓄水期</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-period">🔐 信任背书内容</div>
+          <div class="tl-action">针对「avis租车靠谱吗」高热度词，输出用车体验类真实UGC内容</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-period">💼 商旅精英定位</div>
+          <div class="tl-action">围绕「出差租车」「商务出行」「机场VIP」场景，打造品牌高端感</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-period">🌍 目的地攻略联动</div>
+          <div class="tl-action">与日本/美国/欧洲热门目的地词联动，布局「XX租车推荐」类内容</div>
         </div>
       </div>
     </div>
